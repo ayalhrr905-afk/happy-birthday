@@ -29,7 +29,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* تصميم وحركة الكعكة الإيموجي زي أول مرة */
+/* تصميم وحركة الكعكة الإيموجي */
 .cake {
     font-size: 60px;
     margin-bottom: 20px;
@@ -77,7 +77,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* كلاس لإخفاء المشهد الثاني */
+/* كلاس أساسي لإخفاء المشهد الثاني */
 .hidden {
     display: none !important;
 }
