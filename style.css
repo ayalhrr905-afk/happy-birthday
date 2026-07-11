@@ -5,7 +5,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #fedcca 0%, #f69d9d 100%);
+    /* ألوان متدرجة واسعة لتسمح بالحركة */
+    background: linear-gradient(45deg, #fedcca, #f69d9d, #ea8ea7, #b28dca);
+    background-size: 400% 400%;
+    /* تشغيل حركة الخلفية المتموجة للأبد */
+    animation: gradientMovement 12s ease infinite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
@@ -82,7 +86,15 @@ button:hover {
     display: none !important;
 }
 
-/* حركات أنيميشن */
+/* ⬇️ الأنميشن والحركات ⬇️ */
+
+/* حركة تموج ألوان الخلفية */
+@keyframes gradientMovement {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 @keyframes popIn {
     0% { transform: scale(0.8); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
