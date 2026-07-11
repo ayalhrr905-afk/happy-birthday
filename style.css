@@ -21,6 +21,15 @@ body {
     animation: popIn 1s ease-out;
 }
 
+/* لتنسيق صورة الولد المضحكة */
+.surprise-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* تصميم وحركة الكعكة الإيموجي زي أول مرة */
 .cake {
     font-size: 60px;
     margin-bottom: 20px;
@@ -37,6 +46,12 @@ h2 {
     color: #7f53ac;
     font-size: 22px;
     margin-top: 0;
+}
+
+h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -62,7 +77,12 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* حركات أنيميشن لطيفة */
+/* كلاس لإخفاء المشهد الثاني */
+.hidden {
+    display: none !important;
+}
+
+/* حركات أنيميشن */
 @keyframes popIn {
     0% { transform: scale(0.8); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
