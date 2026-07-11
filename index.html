@@ -10,15 +10,24 @@
 </head>
 <body>
 
-    <div class="card">
+    <!-- المشهد الأول: المفاجأة الأولى -->
+    <div id="first-scene" class="card">
+        <img src="ph1.png" alt="صورة مفاجأة" class="surprise-img">
+        <h3>مفكر ممكن ننسى عيد ميلادك؟ 😏</h3>
+        <button onclick="startCelebration()">اضغط للمفاجأة!</button>
+    </div>
+
+    <!-- المشهد الثاني: الاحتفال الحقيقي بالـ CSS (مخفي في البداية) -->
+    <div id="second-scene" class="card hidden">
         <div class="cake">🎂</div>
         <h1>كل عام وأنتِ بخير! ✨</h1>
         <h2>Happy Birthday! 🎉</h2>
         <p>اليوم يوم مميز جداً، بتمنالك سنة مليانة سعادة ونجاح وتحقيق كل الأمنيات. هاد الموقع الصغير انعمل خصيصاً عشانك! 💖</p>
-        <button onclick="celebrate()">اضغط هنا للمفاجأة! 🎈</button>
     </div>
 
-    <script src="script.js"></script> 
-   <audio id="birthday-audio" src="birthday-audio.mp3" loop></audio>
+    <!-- ملف الصوت -->
+    <audio id="birthday-audio" src="birthday-audio.mp3" loop></audio>
+
+    <script src="script.js"></script>
 </body>
 </html>
